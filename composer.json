@@ -1,0 +1,25 @@
+{
+  "name": "v1v2/php-client",
+  "description": "JSON API to https://cov19vacsideeffects.online data",
+  "type": "library",
+  "require": {
+    "php": "^7.2.5",
+    "ext-openssl": "*",
+    "ext-curl": "*",
+    "elao/enum": "^1.13",
+    "ext-json": "*"
+  },
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Aleksandr Kleoshin",
+      "email": "aleksandrkleoshin@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "V1V2\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
