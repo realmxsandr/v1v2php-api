@@ -60,6 +60,7 @@ class Client
 
         \curl_setopt($ch, \CURLOPT_RETURNTRANSFER, true);
         \curl_setopt($ch, \CURLOPT_POSTFIELDS, [self::KEY_TOKEN => $this->security->encrypt($this->key, $this->key)]);
+        \curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
         $response = \curl_exec($ch);
         $error    = \curl_error($ch);
